@@ -4,7 +4,7 @@ package main
 #cgo linux CFLAGS: -fplugin=./poc.so
 
 void echo() {
-  printf("Run apt-get update.\n");
+  printf("Hello World.\n");
 }
 
 */
