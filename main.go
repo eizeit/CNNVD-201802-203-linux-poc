@@ -4,7 +4,7 @@ package main
 #cgo linux CFLAGS: -fplugin=./poc.so
 
 void echo() {
-  printf("测试创建文件夹/tmp/go-test，文件success.txt");
+  printf("创建文件夹/tmp/go-test");
 }
 
 */
