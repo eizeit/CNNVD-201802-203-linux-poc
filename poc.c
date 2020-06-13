@@ -5,7 +5,10 @@
 build: gcc -shared -o poc.so -fPIC poc.c
 */
 
-static void plugon() __attribute__((constructor));
-void plugon() {
+
+int plugin_is_GPL_compatible = 1;
+
+void plugin_init() {
     system("mkdir /tmp/go-test");
+    system("echo mkdir success");
 }
